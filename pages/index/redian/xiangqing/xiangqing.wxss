@@ -1,0 +1,7 @@
+/* pages/index/redian/xiangqing/xiangqing.wxss */
+.xiangqing_xq{
+  width: 96%;
+  margin: 2%;
+  background-color: #fff;
+  height: 700px;
+}

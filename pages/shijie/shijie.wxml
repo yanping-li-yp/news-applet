@@ -1,0 +1,35 @@
+<view class="table_scroll">
+
+  <!-- <view class="scroll scroll_on">推荐</view>
+  <view class="scroll">小视频</view>
+  <view class="scroll">直播</view>
+  <view class="scroll">电台</view> -->
+<view class="navbar1">
+  <view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+  <view class="search_box">
+    <image src="/xsx_image/search_img.png" class="search_img"></image>
+  </view>
+</view>
+</view>
+
+<!--推荐-->
+<view hidden="{{currentTab!==0}}">
+  <include src="tj/tj"/>
+</view>
+ 
+<!--小视频-->
+<view hidden="{{currentTab!==1}}">
+  <include src="xsp/xsp"/>
+</view>
+ 
+<!--直播-->
+<view hidden="{{currentTab!==2}}">
+  <include src="zb/zb"/>
+</view>
+
+<!--电台-->
+<view hidden="{{currentTab!==3}}">
+  <include src="dt/dt"/>
+</view>

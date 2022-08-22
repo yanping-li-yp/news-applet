@@ -1,0 +1,251 @@
+/* pages/details/details.wxss */
+
+/* 阿里字体引用 */
+@font-face {
+  font-family: "iconfont"; /* Project id 2627117 */
+  src: url('/pages/details/font/iconfont.woff2?t=1625402876280') format('woff2'),
+       url('/pages/details/font/iconfont.woff?t=1625402876280') format('woff'),
+       url('/pages/details/font/iconfont.ttf?t=1625402876280') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-dianzan:before {
+  content: "\e616";
+}
+.icon-pinglun:before {
+  content: "\e603";
+}
+.icon-favorite-fill:before {
+  content: "\e61f";
+}
+.icon-fenxiang:before {
+  content: "\e601";
+}
+/* 阿里字体引用 */
+
+/* 设置视频大小 */
+.section{
+  width: 100%;
+}
+/* 详情页上半部分 */
+.details{
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+/* 视频下面的长标题 */
+.video_title{
+  margin: 8px auto;
+  text-align: justify;
+  width: 96%;
+  height: 38px;
+  font-size: 14px;
+  color: #2c2c2c;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 19px;
+  overflow: hidden;
+  background-color:white;
+}
+
+.video_title_out{
+  width: 96%;
+  height: 20px;
+  margin: 0px 2%;
+  background-color:white;
+}
+/* 热度、科技、互联网、综艺 */
+.video_labels{
+  display: inline;
+  margin-right: 10px;
+  font-size: 10px;
+  color: #2e2e2e;
+}
+/* 评论、点赞、分享 */
+.video_operate{
+  width: 96%;
+  height: 40px;
+  margin: 0px 2%;
+  margin-top: 26px;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video_operate_inner{
+  width: 50px;
+  height: 40px;
+  font-weight: 600;
+  color:rgb(49, 49, 49);
+  padding: 0px 3%;
+  background-color: white;
+}
+
+.hot{
+  width: 22px;
+  height: 9px;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 10px;
+  position: absolute;
+  transform: translate(30px,-27px);
+  border-radius: 5px;
+  color: white;
+  background-color:  #F7B21E;
+}
+
+.iconfont_desc{
+  font-size: 11px;
+}
+/* 评论、点赞、分享 */
+
+/* 用户信息 */
+.userinfo{
+  width: 96%;
+  height: 46px;
+  margin: 0px 2%;
+  margin-top: 16px;
+  display: flex;
+  background-color: white;
+}
+
+.userinfo_photo{
+  width: 54px;
+  height: 46px;
+  background-color: white;
+}
+
+.userinfo_photo_style{
+  width: 36px;
+  height: 36px;
+  margin: 5px 6px;
+}
+
+.userinfo_desc{
+  width: 66%;
+  height: 46px;
+  background-color: white;
+  /* clear: both; */
+}
+/* 叮当 果果 */
+.userinfo_name{
+  font-size: 13px;
+  display: inline-block;
+  font-weight: 600;
+  color: #333333;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+/* 星星 */
+.userinfo_level{
+  display: inline-block;
+  font-size: 9px;
+  color: #ECAA0A;
+  letter-spacing: 1px;
+}
+
+.userinfo_details{
+  margin-top: 3px;
+  font-size: 10px;
+}
+/* 关注 */
+.guanzhu{
+  width: 46px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  font-size: 10px;
+  border-radius: 12px;
+  background-color: #1A6CDE;
+  margin-left: auto; 
+  margin-top: 13px;
+}
+
+/* 简介 */
+.brief{
+  width: 96%;
+  height: auto;
+  margin: 0px 2%;
+  margin-top: 18px;
+  background-color: white;
+}
+
+.brief_title{
+  width: 100%;
+  height: 24px;
+  font-size: 13px;
+  background-color: white;
+}
+
+.brief_desc{
+  text-align: justify;
+  width: 100%;
+  height: auto;
+  font-size: 12px;
+  line-height: 19px;
+  color: #909090;
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  background-color: white;
+}
+
+/* 推荐视频 */
+.recommend{
+  width: 96%;
+  height: auto;
+  margin: 0px 2%;
+  margin-top: 16px;
+  background-color: white
+}
+
+.recomend_video_outer{
+  width: 100%;
+  height: 66px;
+  display: inline-flex;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.recommend_video_resource{
+  /* width: 200px;
+  height: auto; */
+  display: inline-block;
+  background-color:white;
+}
+.recommend_video_title{
+  font-size: 13px;
+  /* display: inline-block; */
+  /* text-align: justify; */
+  float: left;
+  margin-left: 10px;
+  overflow: scroll;
+  width: auto;
+  height: auto;
+}
+
+.recommend_photo{
+  width: 100px;
+  height: 72px;
+}
+
+.date_time{
+  white-space:pre-wrap;
+  font-size: 11px;
+  color: #3d3d3d;
+}
+
+.nomore{
+  width: 98%;
+  height: auto;
+  color: #909090;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 10px;
+}

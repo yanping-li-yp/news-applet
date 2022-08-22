@@ -1,0 +1,380 @@
+<!-- 导航条 -->
+
+
+ 
+<view class=" nav  title {{scrollTop > 30 ? 'topnav' : ''}}" >
+<view class="nav_1">
+  <view bindtap="navSwitch" data-index="0" class="{{navState==0 ? 'nav-switch-style':''}} zi">发现</view>
+  <view bindtap="navSwitch" data-index="1" class="{{navState==1 ? 'nav-switch-style':''}} zi">专栏</view>
+  <view bindtap="navSwitch" data-index="2" class="{{navState==2 ? 'nav-switch-style':''}} zi">爆料</view>
+
+  
+  <!-- <navigator url="/pages/logs/logs"> -->
+  <view><image src="/static/image/search.png" class="search"></image></view>
+  <!-- </navigator> -->
+</view>
+
+</view>
+
+
+
+<!-- 不可滑动页 -->
+  <view wx:if="{{navState==0}}"class="style-default" > 
+
+    <!-- 线条 -->
+
+
+    <view class="huati">
+     <view class="huati_1">精选话题</view>
+
+
+     <navigator url="/pages/news/news">
+     <view class="huati_2">查看更多
+     <image src="/static/image/right.png" class="huati_imge"></image>
+     </view>
+
+     </navigator>
+     
+    </view>
+
+
+
+ <!-- 6个框 -->
+
+
+   <view class="title_1 "   >
+   <view class="title_2" wx:for="{{typelist}}" data-id="{{item.id}}"   bindtap="toDetail">
+    
+<!-- bindtap="ontiaozhuan" -->
+    <view class="title_2_one">{{item.title}} </view>
+    
+   
+    <view class="title_2_tow">{{item.headline}}</view>
+   </view>
+   </view>   
+ 
+
+<!-- 灰色分界线 -->
+
+    <view class="fenjie"></view>
+    <!-- 下一层 -->
+    <view class="huati">
+     <view class="huati_1">经常关注</view>
+
+     <navigator url="/pages/news/news">
+
+     <view class="huati_2">展开全部
+     <image src="/static/image/right.png" class="huati_imge"></image>
+     </view>
+   </navigator>
+    </view>
+
+<!-- 图片经常关注 -->
+   <view>
+     <view wx:for="{{imgelist}}" class="menu_icon"     bindtap="toDetail" data-num="{{item.num}}">
+     <view >
+     <image class="tupian_1" src="{{item.img}}"></image>
+     <view class="tupian_2">{{item.title}}</view>
+   </view>
+    
+
+     
+     </view>
+   </view>
+    
+
+    <!-- 灰色分界线 -->
+
+    <view class="fenjie" style="margin-top:10px;"></view>
+    
+<!-- 个人 关注  -->
+    <view >
+    <!-- 头像上层部分 -->
+    <view>
+
+   <view wx:for="{{selflist}}">
+    <image src="{{item.img}}" class="touxiangtupian"></image>
+    <view class="buju">
+    <view class="touxiangwenzi">{{item.title}}</view>
+    <view class="time">{{item.time}}</view>
+    </view>
+   </view>
+   <view class="grade">LV7</view>
+   <!-- <view class="time">2小时前</view> -->
+
+<!-- 关注按钮 -->
+
+     <view bindtap="onGuanzhu" class="class_main_content_ding">{{guanzhu}}</view>
+   </view>
+    <view class="jiewuwenzi">2019NEXT IDOL 校园街舞挑战赛已于6月圆满结束</view>
+
+    <!-- 视频层 -->
+
+
+<view class="guanzhu">
+
+
+<view >
+ <video  class="shipin" src="http://vjs.zencdn.net/v/oceans.mp4" binderror="videoErrorCallback"></video>
+</view>
+
+<!-- 视频的左边 -->
+
+<navigator url="/pages/news/news">
+<view class="shinpin_right">
+<view class="shipinwenzi_top">2019NEXT IDOL 校园街舞挑战赛已于6月30日在北京新中关购</view>
+<!-- 左边的下面 -->
+<view class="shipinwenzi_low">
+
+ <image src="/static/image/touxiang1.png" class="pinluntouxiang"></image>
+<image src="/static/image/touxiang2.png" class="pinluntouxiang"></image>
+<image src="/static/image/touxiang3.png" class="pinluntouxiang"></image>
+
+<view class="test">
+<image src="/static/image/dianzan.png"  class="pinglunimg"></image>
+<view class="wenzi">345点赞</view>
+
+</view>
+<view class="test">
+
+<image src="/static/image/pinglun.png"  class="pinglunimg"></image>
+<view class="wenzi">760评论</view>
+</view>
+</view>
+</view>
+</navigator>
+</view>
+    </view>
+    
+   </view>
+
+
+<!-- 专栏 -->
+  <view wx:elif="{{navState==1}}" class="style-default">
+  
+
+  <view >
+ <video  class="shipinplus" src="http://vjs.zencdn.net/v/oceans.mp4" binderror="videoErrorCallback" autoplay="ture"></video>
+</view>
+
+
+
+<!-- 灰色分界线 -->
+
+    <view class="fenjie"></view>
+    <!-- 下一层 -->
+    <view class="huati">
+     <view class="huati_1">经常关注</view>
+
+     <navigator url="/pages/news/news">
+
+     <view class="huati_2">展开全部
+     <image src="/static/image/right.png" class="huati_imge"></image>
+     </view>
+   </navigator>
+    </view>
+
+<!-- 图片经常关注 -->
+   <view>
+     <view wx:for="{{imgelist}}" class="menu_icon"     bindtap="toDetail" data-num="{{item.num}}">
+     <view >
+     <image class="tupian_1" src="{{item.img}}"></image>
+     <view class="tupian_2">{{item.title}}</view>
+   </view>
+    
+
+     
+     </view>
+   </view>
+    
+
+    <!-- 灰色分界线 -->
+
+    <view class="fenjie" style="margin-top:10px;"></view>
+    
+<!-- 个人 关注  -->
+    <view >
+    <!-- 头像上层部分 -->
+    <view>
+
+   <view wx:for="{{selflist}}">
+    <image src="{{item.img}}" class="touxiangtupian"></image>
+    <view class="buju">
+    <view class="touxiangwenzi">{{item.title}}</view>
+    <view class="time">{{item.time}}</view>
+    </view>
+   </view>
+   <view class="grade">LV7</view>
+
+
+<!-- 关注按钮 -->
+
+     <view bindtap="onGuanzhu" class="class_main_content_ding">{{guanzhu}}</view>
+   </view>
+    <view class="jiewuwenzi">2019NEXT IDOL 校园街舞挑战赛已于6月圆满结束</view>
+
+    <!-- 视频层 -->
+<view class="guanzhu">
+
+ <!-- <view class="shipinwenzi">1.播放网络视频</view> -->
+<view >
+ <video  class="shipin" src="http://vjs.zencdn.net/v/oceans.mp4" binderror="videoErrorCallback"></video>
+</view>
+
+<!-- 视频的左边 -->
+
+<navigator url="/pages/logs/logs">
+<view class="shinpin_right">
+<view class="shipinwenzi_top">2019NEXT IDOL 校园街舞挑战赛已于6月30日在北京新中关购</view>
+<!-- 左边的下面 -->
+<view class="shipinwenzi_low">
+
+ <image src="/static/image/touxiang1.png" class="pinluntouxiang"></image>
+<image src="/static/image/touxiang2.png" class="pinluntouxiang"></image>
+<image src="/static/image/touxiang3.png" class="pinluntouxiang"></image>
+
+<view class="test">
+<image src="/static/image/dianzan.png"  class="pinglunimg"></image>
+<view class="wenzi">345点赞</view>
+
+</view>
+<view class="test">
+
+<image src="/static/image/pinglun.png"  class="pinglunimg"></image>
+<view class="wenzi">760评论</view>
+</view>
+</view>
+</view>
+</navigator>
+</view>
+    </view>
+    
+  
+  
+  </view>
+
+
+
+
+  <!-- 爆料 -->
+  <view wx:else="{{navState==2}}" class="style-default">
+  
+    <view class="huati">
+     <view class="huati_1">精选话题</view>
+
+
+     <navigator url="/pages/news/news">
+     <view class="huati_2">查看更多
+     <image src="/static/image/right.png" class="huati_imge"></image>
+     </view>
+
+     </navigator>
+     
+    </view>
+
+ <!-- 6个框 -->
+
+   <view class="title_1 "   >
+   <view class="title_2" wx:for="{{typelist}}" data-id="{{item.id}}"   bindtap="toDetail">
+    
+<!-- bindtap="ontiaozhuan" -->
+    <view class="title_2_one">{{item.title}} </view>
+    
+   
+    <view class="title_2_tow">{{item.headline}}</view>
+   </view>
+   </view>   
+ 
+
+<!-- 灰色分界线 -->
+
+    <view class="fenjie"></view>
+    <!-- 下一层 -->
+    <view class="huati">
+     <view class="huati_1">经常关注</view>
+
+     <navigator url="/pages/news/news">
+
+     <view class="huati_2">展开全部
+     <image src="/static/image/right.png" class="huati_imge"></image>
+     </view>
+   </navigator>
+    </view>
+
+<!-- 图片经常关注 -->
+   <view>
+     <view wx:for="{{imgelist}}" class="menu_icon"     bindtap="toDetail" data-num="{{item.num}}">
+     <view >
+     <image class="tupian_1" src="{{item.img}}"></image>
+     <view class="tupian_2">{{item.title}}</view>
+   </view>
+    
+
+     
+     </view>
+   </view>
+    
+
+    <!-- 灰色分界线 -->
+
+    <view class="fenjie" style="margin-top:10px;"></view>
+    
+<!-- 个人 关注  -->
+    <view >
+    <!-- 头像上层部分 -->
+    <view>
+
+   <view wx:for="{{selflist}}">
+    <image src="{{item.img}}" class="touxiangtupian"></image>
+    <view class="buju">
+    <view class="touxiangwenzi">{{item.title}}</view>
+    <view class="time">{{item.time}}</view>
+    </view>
+   </view>
+   <view class="grade">LV7</view>
+
+
+<!-- 关注按钮 -->
+     <view bindtap="onGuanzhu" class="class_main_content_ding">{{guanzhu}}</view>
+   </view>
+    <view class="jiewuwenzi">2019NEXT IDOL 校园街舞挑战赛已于6月圆满结束</view>
+
+    <!-- 视频层 -->
+
+<view class="guanzhu">
+
+<view >
+ <video  class="shipin" src="http://vjs.zencdn.net/v/oceans.mp4" binderror="videoErrorCallback"></video>
+</view>
+
+<!-- 视频的左边 -->
+
+<navigator url="/pages/logs/logs">
+<view class="shinpin_right">
+<view class="shipinwenzi_top">2019NEXT IDOL 校园街舞挑战赛已于6月30日在北京新中关购</view>
+<!-- 左边的下面 -->
+<view class="shipinwenzi_low">
+
+ <image src="/static/image/touxiang1.png" class="pinluntouxiang"></image>
+<image src="/static/image/touxiang2.png" class="pinluntouxiang"></image>
+<image src="/static/image/touxiang3.png" class="pinluntouxiang"></image>
+
+<view class="test">
+<image src="/static/image/dianzan.png"  class="pinglunimg"></image>
+<view class="wenzi">345点赞</view>
+
+</view>
+<view class="test">
+
+<image src="/static/image/pinglun.png"  class="pinglunimg"></image>
+<view class="wenzi">760评论</view>
+</view>
+</view>
+</view>
+</navigator>
+</view>
+    </view>
+    
+  </view>
+
+

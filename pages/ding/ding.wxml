@@ -1,0 +1,214 @@
+<view class="swiper-tab"  >
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav" >订阅</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">杂志</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">关注</view>
+  <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">自媒体</view>
+  <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">问答</view>
+  <view class="swiper-tab-list {{currentTab==5 ? 'on' : ''}}" data-current="5" bindtap="swichNav">
+    <image src="/static/image/search.png" class="suosuo"></image>
+  </view>
+</view>
+<view>
+  <view class="emem">
+  </view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-boxs" duration="300" style="height:{{winHeight - 31}}px"
+  bindchange="bindChange">
+  <!-- 订阅部分开始 -->
+  <swiper-item class="big_box" >
+    <view class="z_dy">
+      <view class="zdy_a">
+        <view class="zdy_nav">
+          <view class="zdy_nav_l">
+            <view class="zdy_nav_l_img">
+              <image src="/static/image/lvxingren.png" class="zdy_tx"></image>
+            </view>
+            <view class="zdy_nav_l_text">
+              <view class="zdy_nc">旅行人</view>
+              <view class="zdy_time">2019-07-12</view>
+            </view>
+            <view><image src="/static/image/pingfenxx.png" class="zdy_pf"></image>
+            </view>
+            <view class="pingfen">评分4分</view>
+          </view>
+          <view class="zdy_nav_r">
+            <view class="zdy_jt">
+              <image src="/static/image/xiangxiabq.png" class="zdy_jt_img"></image>
+            </view>
+          </view>
+        </view>
+        <view class="zdy_nr">
+          <view class="zdy_nr_text_img">
+            <view class="zdy_nr_text">上海浦东首推6条全域旅游线路下一步将开拓自贸区旅游，开辟国际游学线路、金融游线路
+            </view>
+            <view class="zdy_nr_imgs">
+            
+            <image src="/static/image/lxr_img.png" class="zdy_nr_img" ></image></view>
+          </view>
+          <view class="zdy_fxpl">
+            <image src="/static/image/lxr_fxpl.png" class="zdy_fxpl_img"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="emem"></view>
+    <view class="z_dy">
+      <view class="zdy_a">
+        <view class="zdy_nav">
+          <view class="zdy_nav_l">
+            <view class="zdy_nav_l_img">
+              <image src="/static/image/aicitian.png" class="zdy_tx"></image>
+            </view>
+            <view class="zdy_nav_l_text">
+              <view class="zdy_nc">爱吃甜</view>
+              <view class="zdy_time">2019-07-21</view>
+            </view>
+            <view><image src="/static/image/pingfenxx.png" class="zdy_pf"></image>
+            </view>
+            <view class="pingfen">评分4分</view>
+          </view>
+          <view class="zdy_nav_r">
+            <view class="zdy_jt">
+              <image src="/static/image/xiangxiabq.png" class="zdy_jt_img"></image>
+            </view>
+          </view>
+        </view>
+        <view class="zdy_nr">
+          <view class="zdy_nr_text_img">
+            <view class="zdy_nr_text">肚子饿了在家附近,发现这家店里的甜品还真可以啊特别好吃，我一下子买了好多棒棒哒
+
+            </view>
+            <view class="zdy_nr_imgs">
+            
+            <image src="/static/image/aicitian_img.png" class="zdy_nr_img" ></image></view>
+          </view>
+          <view class="zdy_fxpl">
+            <image src="/static/image/lxr_fxpl.png" class="zdy_fxpl_img"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  <!-- 订阅部分结束 -->
+  <!-- 杂志 -->
+  <swiper-item>
+    <!-- 轮播图 -->
+    <view class="zhazi">
+      <view class="box">
+  <view>
+    <swiper class="swiper" next-margin="120rpx" previous-margin="120rpx" current="{{currentItemId}}" bindchange="swiperChange" autoplay  circular interval="1500" >
+      <block wx:for="{{expert_list}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+        <swiper-item item-id="{{index}}" data-item-id="{{index}}" bindtap='clickChange'>
+          <view class='row'>
+            <view class='col {{currentItemId == index ? "selected" : ""}}'>
+              <image src="{{item.img}}"> </image>
+            </view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="dots"> 
+      <block wx:for="{{expert_list}}" wx:key="unique"> 
+        <view class="dot{{index == currentItemId ? ' active' : ''}}"></view> 
+      </block> 
+    </view>
+  </view>
+</view>
+
+    </view>
+    <!-- 轮播图结束 -->
+    <!-- 每日听刊 -->
+    <view class="day_kan">
+      <view class="dk_nav">
+        <view class="dk_nav_l">每日听刊 </view>
+        <view class="dk_nav_r">查看全部 <image src="/static/image/right.png" class="dk_nav_r_img"></image></view>
+      </view>
+      <view class="dk_a">
+        <view class="dk_a_l">
+        <image src="/static/image/video_on.png" class="dk_list_video"></image>
+        <view class="da_a_text">体育运动 | 《足球周刊》</view>
+        </view>
+        <view class="dk_list_r">12:00</view>
+      </view>
+      <view class="dk_a">
+        <view class="dk_a_l">
+        <image src="/static/image/video_on.png" class="dk_list_video"></image>
+        <view class="da_a_text">健身运动  |  《高尔夫大师》</view>
+        </view>
+        <view class="dk_list_r">12:00</view>
+      </view>
+      <view class="dk_a">
+        <view class="dk_a_l">
+        <image src="/static/image/video_on.png" class="dk_list_video"></image>
+        <view class="da_a_text">旅游摄影 | 《中国国家地理》</view>
+        </view>
+        <view class="dk_list_r">12:00</view>
+      </view>
+    </view>
+    <!-- 我的订阅部分 -->
+    <view class="emem">
+    </view>
+    <view class="dingy">
+      <view class="dy_nav">
+        <view class="dk_nav_l">我的订阅 </view>
+        <view class="dk_nav_r">查看全部 <image src="/static/image/right.png" class="dk_nav_r_img"></image>
+        </view>
+      </view>
+      <view class="dy_lists">
+        <view class="dy_list" wx:for="{{dingyue_list}}" wx:key="idx">
+          <view class="dy_imgs">
+          <image src="{{item.dy_img}}" class="dy_img"></image>
+          </view>
+          <view class="dy_text">{{item.dy_text}}</view>
+          <view class="dy_time">{{item.dy_time}}</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  <!-- 关注 -->
+  <swiper-item> 
+    <view class="class_main width100">
+    <view class="class_main_left">
+      <view wx:for="{{typelist}}" wx:key="*this"   class="{{select==item.id?'class_main_left_list active':'class_main_left_list'}}" data-id="{{item.id}}"
+      bindtap="onActive"
+      >{{item.name}}</view>
+    </view>
+
+    
+    <view class="class_main_right">
+    <scroll-view class="scroll-view_H" scroll-y="true" bindscroll="scroll" style="width: 100%;height:500px">
+      <view class="class_main_right_list width100" wx:for="{{typelist}}"
+       wx:key="*this" wx:for-index="index"  wx:if="{{item.id==select}}">
+
+            <view class="class_main_content" wx:for="{{item.data}}" wx:key="*this" wx:for-index="indexs"  wx:for-item="items">
+            <image src="{{items.img}}" class="class_hots_logo"></image>
+            <view class="class_main_content_text">
+              <view class="class_hots_title">
+                {{items.title}}
+              </view>
+              <view class="class_hots_desc">
+                {{items.desc}}
+              </view>
+              <view class="class_hots_fs">
+                {{items.fens}}
+              </view>
+            </view>
+            <view class="class_main_content_ding" bindtap="onDing" data-index="{{index}}" data-indexs="{{indexs}}">
+             <view wx:if="{{items.status==0}}">+订阅</view>
+             <view wx:else>已订</view>
+            </view>
+         </view>
+      </view>
+
+    </scroll-view>
+  
+    </view>
+  </view>
+  </swiper-item>
+  <swiper-item>
+    <view>自媒体</view>
+  </swiper-item>
+  <swiper-item>
+    <view>问答</view>
+  </swiper-item>
+</swiper>

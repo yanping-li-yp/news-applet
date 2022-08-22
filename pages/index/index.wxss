@@ -1,0 +1,402 @@
+/**index.wxss**/
+.body{
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+ 
+}
+.head{
+  height: auto;
+  width: 94%;
+  padding: 5px 3%;
+  background-color: #fff;
+  display: flex;
+}
+.head_img{
+  height: 16px;
+  width: 14px;
+  margin-top: 3px;
+}
+.head_font{
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  margin:5px 3px;
+}
+.head_find{
+  width: 66%;
+  height: 30px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin: 0px 5px ;
+  display: flex;
+}
+.head_img1{
+  width: 20px;
+  height: 20px;
+  margin:5px 10px;
+}
+.head_font1{
+  font-size: 14px;
+  line-height: 14px;
+  color: #bababa;
+  margin: 5px 0px;
+  width: 85%;
+}
+.head_yun{
+  width: 22px;
+  height: 18px;
+  margin: 4px;
+}
+.head_font2{
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  margin-top: 8px;
+}
+.head_list{
+  width: 100%;
+  height: 30px;
+ display: flex;
+ justify-content:space-around;
+ flex-direction:row;
+ padding-top: 5%;
+ background-color: #fff;
+}
+/*.head_list_font1{
+  font-size: 16px;
+  line-height: 16px;
+  color: #3e69c7;
+  
+}
+.head_list_font2{
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}*/
+.tab{
+  display: flex;
+ }
+ .tab-item{
+  flex: 1;
+  font-size:16px ;
+  text-align: center;
+  line-height: 16px;
+  color: #000000;
+ }
+ .content{
+  flex: 1;
+ }
+ .content>swiper{
+  height: 100%;
+ }
+ .tab-item.active{
+  color: #3e69c7;
+  border-bottom-color:#3e69c7 ;
+ }
+.head_list_font_xian{
+  width: 32px;
+  height: 4px;
+  background-color: #3e69c7;
+  margin-top: 10px;
+}
+.head_list_img{
+  width: 16px;
+  height: 16px;
+}
+.swiper-item{
+  display: block;
+}
+
+.demo{
+  height:auto;
+  width: auto;
+  margin: 0px 2% 3% 2%;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+.news_box{
+  width: 94%;
+  height: 25%;
+  background-color:#ffffff;
+  padding:0px  3%;
+}
+.news{
+  width: 100%;
+  height: 25%;
+  background-color:#ffffff;
+  display: flex;
+}
+.news_fond{
+  font-size: 16px;
+}
+.news_img{
+  width: 32%;
+  height: 60px;
+  justify-content:space-around;
+  margin-right: 1%;
+}
+.news_img_img{
+  width: 32%;
+  height: 60px;
+  justify-content:space-around;
+  margin-left: 2px;
+}
+.head_list1{
+  margin: auto;
+  height: auto;
+  display: flex;
+}
+.news_head{
+  width: 25px;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #df9ea4;
+  border: 1px solid #df9ea4;
+  background-color: #ffffff;
+  margin: 10px 5px;
+}
+.news_head_img{
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+}
+.news_head_font{
+  font-size: 10px;
+  color: #8b8b8b;
+  line-height: 10px;
+  margin: 10px 2px;
+}
+.news_head_font1{
+  font-size: 12px;
+  color: #8b8b8b;
+  line-height: 12px;
+  margin: 10px 2px;
+}
+.news_head_img1{
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+  margin-left: 10%;
+}
+.news_head_img2{
+  height: 20px;
+  width: 20px;
+  margin-top: 3px;
+}
+.navbar{
+  width: 96%;
+  height: 30px;
+  flex: none;
+  display: flex;
+  background: #fff;
+  padding: 0px 2%;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 16px;
+  font-size: 16px;
+}
+.navbar .item.active{
+  color: #4868c1;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #4868c1;
+}
+.navbar_img{
+  width: 4%;
+  height: 16px;
+  
+}
+.head_head{
+  width: 100%;
+  height: auto;
+  padding: 3% 0px;
+  display: flex;
+  background-color: #fff;
+}
+.head_head1{
+  height: 60px;
+  margin-top: 10px;
+}
+.head_img_img{
+  width: 50px;
+  height: 50px;
+  margin:0px 10px;
+}
+.head_font_font{
+  font-size: 20px;
+  color: #000000;
+}
+.head_font_font1{
+  font-size: 12px;
+  color: #9f9f9f;
+}
+.head_font_font_img{
+  width: 6%;
+  height: 30px;
+  margin-top: 15px ;
+  margin-left: 27%;
+}
+.head_font_box{
+  width: 100%;
+  padding: 2%;
+ display: flex;
+  background-color: #ffffff;
+  height: auto;
+}
+.head_font_font2{
+  font-size: 16px;
+  line-height: 16px;
+  
+}
+.head_font_font3{
+  font-size: 16px;
+  line-height: 16px;
+  color: #163ef0;
+  width: 30%;
+  margin-right: 18px;
+}
+.head_font_box1{
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  height: auto;
+  background-color: #ffffff;
+}
+.head_font_video{
+  width: 100%;
+}
+.head_font_font_lan{
+  width: 100%;
+  padding: 2%;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+}
+.head_font_font_img_img{
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.head_font_font_box{
+  width:100%;
+  padding: 2% ;
+  height: 20px;
+  background-color: #fff;
+  display: flex;
+}
+.head_font_font_font{
+  font-size: 14px;
+  margin-left: 25px;
+  margin-right: 23px;
+}
+.sousuokuang{
+  width:96% ;
+  padding: 2%;
+  height: 20px;
+  display: flex;
+  border-radius: 5px;
+  
+  background-color: #ffffff;
+}
+.sousuokuang_img{
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  }
+.sousuokuang_font{
+font-size: 16px;
+line-height: 16px;
+}
+.fenleilan{
+  width: 100%;
+  
+  height: 30px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content:space-around;
+}
+.fenleilan_img{
+  width: 30px;
+  height: 30px;
+}
+.fenleilan_font{
+  width: 100%;
+  height: 20px;
+  background-color: #fff;
+  display: flex;
+  padding-top: 4px;
+  justify-content:space-around;
+}
+.fenleilan_font_font{
+  font-size: 16px;
+  line-height: 16px;
+}
+.fenleilan_img_img{
+  width: 100%;
+  height: 160px;
+  padding: 2% 2% 2% 3%;
+  background-color: #ffffff;
+  display: flex;
+}
+.fenleilan_img_img1{
+  width: 45%;
+  height: 160px;
+  padding: 1%;
+}
+.meitu{
+  width: 96%;
+  margin: 2%;
+  height: 150px;
+  display: flex;
+}
+.meitu_meitu{
+  width:48%;
+  margin: 1%;
+  height: 150px;
+}
+.shishang{
+  width: 100%;
+  height: 450px;
+}
+.food_food{
+  width: 100%;
+  height: 650px;
+}
+.redian{
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+}
+.redian_img1{
+  width: 96%;
+  margin: 2%;
+  background-color: #fff;
+  height: 150px;
+}
+.redian_img2{
+  width: 100%;
+  
+  background-color: #fff;
+  height: 200px;
+}
+.xiangqing_xq{
+  width: 100%;
+  padding: 2%;
+  background-color: #fff;
+  height: 700px;
+}

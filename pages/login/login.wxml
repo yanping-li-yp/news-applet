@@ -1,0 +1,67 @@
+<!--pages/login/login.wxml-->
+<view class="baody">
+<view class="head">
+<image src="../../static/image/login_03.png" class="tp"></image>
+</view>
+<view class="login_main">
+      <view class="login_main_content">
+         <view class="login_table">
+           <view class="{{active==1?'login_table_title login_select':'login_table_title'}}" 
+           bindtap="changeselect" data-id="1">
+             <view class="login_table_title_text">登录</view>
+             <view  wx:if="{{active==1}}" class="login_table_title_border"></view>
+           </view>
+           <view  class="{{active==2?'login_table_title login_select':'login_table_title'}}"
+           bindtap="changeselect" data-id="2">
+             <view class="login_table_title_text">注册</view>
+             <view wx:if="{{active==2}}" class="login_table_title_border"></view>
+           </view>
+            
+          <view class="login_from">
+                 <view class="form_input">
+                  <image src="/static/image/login_06.png" class="input_img"></image>
+
+                  <input type="text" class="input_text"
+                  placeholder="请输入您的手机号/邮箱"  bindblur="changename" placeholder-class="blur"
+                  ></input>
+                 </view>
+                 
+                 <view class="form_input1">
+                  <image src="/static/image/login_09.png" class="input_img"></image>
+
+                  <input type="password" class="input_text"  bindblur="changepass" 
+                  placeholder="请输入您的密码" placeholder-class="blur"
+                  ></input>
+                 </view>
+
+                 <view class="form_input1" wx:if="{{active==2}}">
+                  <image src="/static/image/login_09.png" class="input_img"></image>
+                  <input type="password" class="input_text"  bindblur="changerepass" 
+                  placeholder="请再次输入密码" placeholder-class="blur"
+                  ></input>
+
+                 </view>
+
+
+                 <view class="button" bindtap="sendlogin">{{button}}</view>
+                 <view class="forget">忘记密码?</view>
+              <view class="more_login">
+                  <view class="more_login_title">
+                      <view class="more_login_line"></view>
+                      <view class="more_login_text">更多登录方式</view>
+                  </view>
+              </view>
+
+
+
+          </view>
+    </view>
+    </view></view>
+       
+<view class="xiaotubiao">
+<image src="../../static/image/weixin.png" class="tubiao"></image>
+<image src="../../static/image/qq.png" class="tubiao"></image>
+<image src="../../static/image/pingguo.png" class="tubiao_pingguo"></image>
+</view>
+</view>
+

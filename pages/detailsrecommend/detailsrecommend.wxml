@@ -1,0 +1,7 @@
+
+<view>
+   <view class="details_title">{{news['title']}}</view>
+ 
+    <rich-text class="details_content" nodes="{{content}}"></rich-text>
+    <rich-text nodes="{{reason}}"></rich-text>
+</view>

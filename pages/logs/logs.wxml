@@ -1,0 +1,7 @@
+<!--logs.wxml-->
+<view class="container log-list">
+   <view>{{news['title']}}</view>
+ 
+    <rich-text nodes="{{content}}"></rich-text>
+
+</view>

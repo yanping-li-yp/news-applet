@@ -1,0 +1,121 @@
+<!--pages/comments/comments.wxml-->
+
+<!-- 用户信息 -->
+<view class="userinfo">
+  <view class="userinfo_photo">
+    <image src="/static/image/pinglun_1.png" class="userinfo_photo_style"></image>
+  </view>
+  <view class="userinfo_desc">
+    <view class="userinfo_name">只为遇见你</view>
+    <view class="userinfo_details">太好玩了，一定要去！</view>
+    <view class="userinfo_time">3小时前 · 3回复</view>
+  </view>
+  <view class="guanzhu">❤</view>
+  <view class="guanzhu_num">212</view>
+ </view> 
+
+ <view class="userinfo">
+  <view class="userinfo_photo">
+    <image src="/static/image/pinglun_3.png" class="userinfo_photo_style"></image>
+  </view>
+  <view class="userinfo_desc">
+    <view class="userinfo_name">只为遇见你</view>
+    <view class="userinfo_details">上次跟朋友去玩，真的太绝了！</view>
+    <view class="userinfo_time">4小时前 · 8回复</view>
+  </view>
+  <view class="guanzhu">❤</view>
+  <view class="guanzhu_num">111</view>
+ </view>
+
+ <view class="userinfo">
+  <view class="userinfo_photo">
+    <image src="/static/image/pinglun_4.png" class="userinfo_photo_style"></image>
+  </view>
+  <view class="userinfo_desc">
+    <view class="userinfo_name">只为遇见你</view>
+    <view class="userinfo_details">太好玩了，一定要去！</view>
+    <view class="userinfo_time">3小时前 · 3回复</view>
+  </view>
+  <view class="guanzhu">❤</view>
+  <view class="guanzhu_num">212</view>
+ </view>
+
+ <view class="userinfo">
+  <view class="userinfo_photo">
+    <image src="/static/image/pinglun_1.png" class="userinfo_photo_style"></image>
+  </view>
+  <view class="userinfo_desc">
+    <view class="userinfo_name">只为遇见你</view>
+    <view class="userinfo_details">太好玩了，一定要去！</view>
+    <view class="userinfo_time">3小时前 · 3回复</view>
+  </view>
+  <view class="guanzhu">❤</view>
+  <view class="guanzhu_num">212</view>
+ </view>
+
+ <view class="userinfo">
+  <view class="userinfo_photo">
+    <image src="/static/image/xiangqing_logo.png" class="userinfo_photo_style"></image>
+  </view>
+  <view class="userinfo_desc">
+    <view class="userinfo_name">只为遇见你</view>
+    <view class="userinfo_details">太好玩了，一定要去！</view>
+    <view class="userinfo_time">3小时前 · 3回复</view>
+  </view>
+  <view class="guanzhu">❤</view>
+  <view class="guanzhu_num">212</view>
+ </view>
+
+ <view class="userinfo">
+  <view class="userinfo_photo">
+    <image src="/static/image/pinglun_1.png" class="userinfo_photo_style"></image>
+  </view>
+  <view class="userinfo_desc">
+    <view class="userinfo_name">只为遇见你</view>
+    <view class="userinfo_details">太好玩了，一定要去！</view>
+    <view class="userinfo_time">3小时前 · 3回复</view>
+  </view>
+  <view class="guanzhu">❤</view>
+  <view class="guanzhu_num">212</view>
+ </view>
+
+ <view class="userinfo">
+  <view class="userinfo_photo">
+    <image src="/static/image/pinglun_1.png" class="userinfo_photo_style"></image>
+  </view>
+  <view class="userinfo_desc">
+    <view class="userinfo_name">只为遇见你</view>
+    <view class="userinfo_details">太好玩了，一定要去！</view>
+    <view class="userinfo_time">3小时前 · 3回复</view>
+  </view>
+  <view class="guanzhu">❤</view>
+  <view class="guanzhu_num">212</view>
+ </view>
+
+ <view class="userinfo">
+  <view class="userinfo_photo">
+    <image src="/static/image/pinglun_1.png" class="userinfo_photo_style"></image>
+  </view>
+  <view class="userinfo_desc">
+    <view class="userinfo_name">只为遇见你</view>
+    <view class="userinfo_details">太好玩了，一定要去！</view>
+    <view class="userinfo_time">3小时前 · 3回复</view>
+  </view>
+  <view class="guanzhu">❤</view>
+  <view class="guanzhu_num">212</view>
+ </view>
+
+ <view class="userinfo">
+  <view class="userinfo_photo">
+    <image src="/static/image/pinglun_1.png" class="userinfo_photo_style"></image>
+  </view>
+  <view class="userinfo_desc">
+    <view class="userinfo_name">只为遇见你</view>
+    <view class="userinfo_details">太好玩了，一定要去！</view>
+    <view class="userinfo_time">3小时前 · 3回复</view>
+  </view>
+  <view class="guanzhu">❤</view>
+  <view class="guanzhu_num">212</view>
+ </view>
+
+ 

@@ -1,0 +1,88 @@
+<!--pages/details/details.wxml-->
+<view class="details">
+<!-- 视频 -->
+  <view class="top page-section tc">
+    <video 
+      id="myVideo" class="section"
+      src="{{details_list[0].video_src}}" 
+      binderror="videoErrorCallback" picture-in-picture-mode="[]" 
+      show-center-play-btn='{{false}}' 
+      show-play-btn="{{true}}" 
+      controls
+    ></video>
+  </view><!-- 视频 -->
+
+  <view class="video_title">{{details_list[0].title}}</view>
+  <!-- 热度、科技、互联网、综艺 -->
+  <view class="video_title_out">
+  <view class="video_labels">热度 2144</view>
+  <view class="video_labels">科技</view>
+  <view class="video_labels">互联网</view>
+  <view class="video_labels">综艺</view>
+  </view><!-- 热度、科技、互联网、综艺 -->
+
+  <!-- 评论、点赞、分享 -->
+  <view class="video_operate">
+  <!-- 评论 -->
+    <view class="video_operate_inner">
+      <view bindtap="onClickPinglun" class='iconfont icon-pinglun' ></view>
+      <view class="hot">203</view>
+      <view class="iconfont_desc">评论</view>
+    </view>
+<!-- 点赞 -->
+    <view class="video_operate_inner">
+      <view bindtap="onFavorite" style="color:{{favorite_color}}" class='iconfont icon-dianzan' ></view>
+      <view class="iconfont_desc">点赞</view>
+    </view>
+<!-- 分享 -->
+    <view class="video_operate_inner">
+      <view bindtap="fenxiang" class='iconfont icon-fenxiang' ></view>
+      <view class="iconfont_desc">分享</view>
+    </view>
+
+  </view> <!-- 评论、点赞、分享 -->
+ 
+ <!-- 用户信息 -->
+ <view class="userinfo">
+  <view class="userinfo_photo">
+    <image src="{{details_list[0].user_logo}}" class="userinfo_photo_style"></image>
+  </view>
+  <view class="userinfo_desc">
+    <view class="userinfo_name">{{details_list[0].user_name}}</view>
+    <view class="userinfo_level iconfont icon-favorite-fill" wx:for="{{details_list[0].user_level}}" wx:key="key"></view>
+    <view class="userinfo_details">{{details_list[0].other_info}}</view>
+  </view>
+  <!-- 关注 -->
+  <view bindtap="onGuanzhu" class="guanzhu">{{status}}</view>
+ </view> <!-- 用户信息 -->
+
+</view>
+
+<!-- 简介 -->
+<view class="brief">
+  <view class="brief_title">简介</view>
+  <view class="brief_desc">{{details_list[0].content}}</view>
+</view><!-- 简介 -->
+
+<!-- 推荐视频 -->
+
+<view class="recommend">
+
+  <!-- <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%"> -->
+
+  <view class="brief_title">更多推荐</view>
+
+  <view class="recomend_video_outer" wx:for="{{news_list}}" wx:key="*this" data-id="{{item.uniquekey}}" bindtap="getDetail">
+    <view class="recommend_video_resource">
+      <image src="{{item.thumbnail_pic_s}}" class="recommend_photo recommend_video_title"></image>
+    </view>
+    <view class="recommend_video_title">{{item.title}}
+      <view class="date_time">{{item.date}}</view>
+    </view>
+  </view>
+
+  
+<!-- </scroll-view> -->
+
+</view><!-- 推荐视频 -->
+<view class="nomore">{{nomore}}</view>

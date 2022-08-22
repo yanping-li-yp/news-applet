@@ -1,0 +1,25 @@
+/* pages/index/map/map.wxss */
+body{
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+.place{
+  height: 40px;
+  width: 94%;
+  margin-left: 3%;
+  display: flex;
+}
+.place_zimu{
+  color: #7c6e6e;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 11px;
+  width: 12px;
+}
+
+.place_font{
+  font-size: 20px;
+  line-height: 20px;
+  margin: 10px;
+}

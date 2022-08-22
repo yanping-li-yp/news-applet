@@ -1,0 +1,15 @@
+/* pages/index/redian/redian.wxss */
+.body{
+  height: auto;
+  width: 94%;
+  padding: 5px 3%;
+  background-color: #fff;
+  display: flex;
+}
+
+.xiangqing_xq{
+  width: 100%;
+  padding: 2%;
+  background-color: #fff;
+  height: 700px;
+}

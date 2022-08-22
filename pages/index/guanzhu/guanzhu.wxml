@@ -1,0 +1,45 @@
+<!--pages/index/guanzhu/guanzhu.wxml-->
+<view class="body">
+<view class="head_head">
+<image src="../../static/image/kandian.png" class="head_img_img" style="width: 124rpx; height: 120rpx; display: inline-block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"></image>
+<view class="head_head1">
+<view class="head_font_font">看点小助理</view>
+<view class="head_font_font1">6月24日·腾讯看点官方小助理</view></view>
+<image src="../../static/image/gengduo.png" class="head_font_font_img"> </image></view>
+<view class="head_font_box">
+<navigator class="head_font_font3">#看点功能更新</navigator>
+<view class="head_font_font2">看点首页「广场」支持样式设置</view>
+</view>
+<view class="head_font_box1">
+<view class="head_font_font2">到8.8.3版本抢先体验呀！</view>
+</view>
+<video 
+     class="head_font_video"
+      id="myVideo" 
+      src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" 
+      binderror="videoErrorCallback" 
+      danmu-list="{{danmuList}}" 
+      enable-danmu 
+      danmu-btn 
+      show-center-play-btn='{{false}}' 
+      show-play-btn="{{true}}" 
+      controls
+      picture-in-picture-mode="{{['push', 'pop']}}"
+      bindenterpictureinpicture='bindVideoEnterPictureInPicture'
+      bindleavepictureinpicture='bindVideoLeavePictureInPicture'
+    ></video>
+    <view class="head_font_font_lan">
+    <image src="../../static/image/xiaoxi.png" class="head_font_font_img_img"></image>
+    <image src="../../static/image/heart.png" class="head_font_font_img_img"></image>
+    <image src="../../static/image/toubi.png" class="head_font_font_img_img"></image>
+    <image src="../../static/image/xing.png" class="head_font_font_img_img"></image>
+    <image src="../../static/image/fenxiang.png" class="head_font_font_img_img"></image>
+    </view>
+    <view class="head_font_font_box">
+    <view class="head_font_font_font">143</view>
+    <view class="head_font_font_font">1万</view>
+    <view class="head_font_font_font">114</view>
+    <view class="head_font_font_font">873</view>
+    <view class="head_font_font_font">248</view>
+    </view>
+</view>

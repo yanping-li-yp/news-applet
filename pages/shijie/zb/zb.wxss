@@ -1,0 +1,5 @@
+/* pages/shijie/zb/zb.wxss */
+.musicimg{
+  width: 100%;
+  height: 700px;
+}

@@ -1,0 +1,84 @@
+{
+  "pages": [
+   "pages/login/login",
+    "pages/index/index",
+    "pages/index/map/map",
+    "pages/news/news",
+    "pages/index/redian/redian",
+    "pages/index/redian/xiangqing/xiangqing",
+    "pages/index/guanzhu/guanzhu",
+    "pages/index/shishang/shishang",
+    "pages/index/food/food",
+    "pages/index/music/music",
+    "pages/index/music/img1/img1",
+    "pages/index/music/img2/img2",
+    "pages/index/music/img3/img3",
+    "pages/index/music/img4/img4",
+    "pages/index/music/img5/img5",
+    "pages/index/photo/photo",
+    "pages/details/details",
+    "pages/detailsrecommend/detailsrecommend",
+    "pages/comments/comments",
+    "pages/shijie/shijie",
+    "pages/shijie/tj/tj",
+    "pages/shijie/xsp/xsp",
+    "pages/shijie/zb/zb",
+    "pages/shijie/dt/dt",
+    "pages/found/found",
+    "pages/ding/ding",
+    "pages/wode/wode",
+    "pages/wode/mine/mine",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#999", 
+    "selectedColor": "#1296db", 
+    "backgroundColor": "#fff", 
+    "list": [
+      { 
+        "pagePath": "pages/index/index",
+        "iconPath": "./static/image/home.png",
+        "selectedIconPath": "./static/image/home_1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shijie/shijie",
+        "iconPath": "./static/image/shipin.png",
+        "selectedIconPath": "./static/image/shipin_1.png",
+        "text": "视界"
+      },
+      {
+        "pagePath": "pages/found/found",
+        "iconPath": "./static/image/faxian.png",
+        "selectedIconPath": "./static/image/faxian_1.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/ding/ding",
+        "iconPath": "./static/image/dingyue.png",
+        "selectedIconPath": "./static/image/dingyue_1.png",
+        "text": "订阅"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "iconPath": "./static/image/wode.png",
+        "selectedIconPath": "./static/image/wode_1.png",
+        "text": "我的"
+      }
+  
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

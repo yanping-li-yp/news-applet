@@ -1,0 +1,2 @@
+<!--pages/index/music/img4/img4.wxml-->
+<image src="../../../../static/image/music-4.jpg" class="musicimg"></image>

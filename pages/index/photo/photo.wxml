@@ -1,0 +1,17 @@
+<!--pages/index/food/food.wxml-->
+<view class="meitu">
+<image src="{{imgList[0]}}" bindtap="preview" data-src="{{imgList[0]}}" class="meitu_meitu"></image>
+<image src="{{imgList[1]}}" bindtap="preview" data-src="{{imgList[1]}}" class="meitu_meitu"></image>
+</view>
+<view class="meitu">
+<image src="{{imgList[2]}}" bindtap="preview" data-src="{{imgList[2]}}" class="meitu_meitu"></image>
+<image src="{{imgList[3]}}" bindtap="preview" data-src="{{imgList[3]}}" class="meitu_meitu"></image>
+</view>
+<view class="meitu">
+<image src="{{imgList[4]}}" bindtap="preview" data-src="{{imgList[4]}}" class="meitu_meitu"></image>
+<image src="{{imgList[5]}}" bindtap="preview" data-src="{{imgList[5]}}" class="meitu_meitu"></image>
+</view>
+<view class="meitu">
+<image src="{{imgList[6]}}" bindtap="preview" data-src="{{imgList[6]}}" class="meitu_meitu"></image>
+<image src="{{imgList[7]}}" bindtap="preview" data-src="{{imgList[7]}}" class="meitu_meitu"></image>
+</view>

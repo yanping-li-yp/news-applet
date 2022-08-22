@@ -1,0 +1,35 @@
+<!--pages/index/redian/redian.wxml-->
+  <view class="demo">
+  <swiper indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="body">
+<view class="news_box">
+<navigator url="../news/news?title=我是news">
+<view class="news">
+<view class="news_font">盛夏时节,中国国家博物馆里人头攒动, "复兴之路" 大型主题展览吸引着各行各业动人们参观学习</view>
+</view>
+<image src="../../static/image/6.png" class="news_img"></image>
+<image src="../../static/image/8.png" class="news_img"></image>
+<image src="../../static/image/7.png" class="news_img_img"></image>
+<view class="head_list1">
+<view class="news_head">头条</view>
+<image src="../../static/image/9.png" class="news_head_img"></image>
+<view class="news_head_font">李潇儿飞翔 ｜ 4小时前</view>
+<image src="../../static/image/pinglun.png" class="news_head_img1"></image>
+<view class="news_head_font1">760评论</view>
+<image src="../../static/image/dianzan1.png" class="news_head_img2"></image>
+<view class="news_head_font1">345点赞</view>
+</view></navigator>
+</view>
+<view class="redian">
+<navigator url="redian/xiangqing/xiangqing">
+<image src="../../static/image/redian1.jpg" class="redian_img1"></image></navigator>
+<image src="../../static/image/redian2.jpg" class="redian_img2"></image>
+</view></view>

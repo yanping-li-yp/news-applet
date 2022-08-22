@@ -1,0 +1,5 @@
+/* pages/index/music/img1/img1.wxss */
+.musicimg{
+  width: 100%;
+  height: 700px;
+}

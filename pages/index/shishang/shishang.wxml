@@ -1,0 +1,13 @@
+<!--pages/index/shishang/shishang.wxml-->
+<view class="demo">
+  <swiper indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls2}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<image src="../../static/image/shishang4.png" class="shishang"></image>
+<image src="../../static/image/shishang5.png" class="shishang"></image>

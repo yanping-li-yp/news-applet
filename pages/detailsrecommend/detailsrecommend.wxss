@@ -1,0 +1,14 @@
+page{
+  width: 96%;
+  margin: 20px 2%;
+}
+
+.details_title{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.details_content{
+  font-size: 14px;
+}

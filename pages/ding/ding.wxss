@@ -1,0 +1,386 @@
+.swiper-tab{
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  display: flex;
+  height: 100%;
+  
+}
+.swiper-tab-list{ 
+   font-size: 30rpx;
+  display: inline-block;
+  width: 20%;
+  color: #777777;
+}
+.on{ 
+  color: blue;
+  border-bottom: 6rpx solid blue;
+}
+.swiper-boxs{ 
+  display: block; 
+  height: auto; 
+  width: 100%; 
+  overflow: hidden; 
+}
+.swiper-boxs view{
+  /* text-align: center; */
+  touch-action: manipulation;
+}
+
+.suosuo{
+  width: 20px;
+  height: 20px;
+  margin-right: 18px;
+  margin-top: 8px ;
+}
+.emem{
+  width: 100%;
+  height: 8px;
+  background: #f2f2f2;
+}
+
+.class_main_content{
+
+ width: 96%;
+ padding:10px 2%;
+ height: auto;
+ float: left;
+ border-bottom: 1px solid #f2f2f2;
+}
+
+.class_main_left{
+ width: 20%;
+ height: 500px;
+ float: left;
+
+}
+
+.class_main_left_list{
+ width: 99%;
+ height: 40px;
+ line-height: 40px;
+ float: left;
+ text-align: center;
+ font-size: 14px;
+ border-left: 4px solid #FFF;
+}
+
+.class_main_left .active{
+ width: 99%;
+ color:#0069db;
+ border-left:5px solid currentColor ;
+}
+
+
+.class_main_right{
+ width: 79%;
+ height: 500px;
+ float: left;
+ border-left:1px solid #f2f2f2;
+}
+
+
+.class_hots_logo{
+ width:50px;
+ height:50px;
+ float: left;
+}
+
+.class_main_content_text{
+ height: 50px;
+ width: 58%;
+ float: left;
+ margin-left: 2%;
+}
+
+.class_hots_title{
+ font-size: 14px;
+ width: 100%;
+ height: 20px;
+ line-height: 20px;
+ float: left;
+ overflow: hidden;
+}
+
+
+.class_hots_desc{
+  font-size: 11px;
+  width: 100%;
+  height: 15px;
+  float: left;
+  overflow: hidden;
+  color: #a3a3a3;
+}
+.class_hots_fs{
+  font-size: 11px;
+  width: 100%;
+  height: 15px;
+  float: left;
+  overflow: hidden;
+  color: #a3a3a3;
+}
+
+.class_main_content_ding{
+ width: 15%;
+ float: right;
+ height: 26px;
+ margin-top:12px;
+ line-height: 26px;
+ background: #0069db;
+ color: #ffffff;
+ padding: 0px 10px;
+ border-radius: 20px;
+ font-size: 12px;
+ text-align: center;
+}
+
+/* ////以下是杂志部分了-------------- */
+.zhazi{
+  height: 150px;
+  width: 100%;
+}
+.swiper {
+  height:150px;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  box-shadow:3rpx 4rpx 30rpx 8rpx #cccfd1;
+}
+
+.title {
+  font-size: 36rpx;
+  text-align: center;
+  margin-bottom: 50rpx;
+}
+
+.col {
+  width: 480rpx;
+  margin: 0 auto;
+  height: 85%;
+  transform: scale(0.9);
+  border-radius: 10rpx;
+  
+}
+
+.col image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+
+.selected {
+  transform: scale(1);
+  /* box-shadow: 0px 0px 20rpx 5rpx #CCC; */
+  
+}
+
+.swiper-box {
+  position: relative;
+  width: 100%;
+}
+
+.dots {
+  left: 0;
+  right: 0;
+  bottom: 103rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.dots .dot {
+  margin: 0 8rpx;
+  width: 14rpx;
+  height: 14rpx;
+  background: #aaa;
+  border-radius: 8rpx;
+  transition: all 0.6s;
+}
+
+.dots .dot.active {
+  width: 24rpx;
+  background: #f80;
+}
+/* 每日听刊部分------------------------- */
+.day_kan{
+  height: 100px;
+  width: 95%;
+  margin: auto;
+}
+.dk_nav{
+  height: 30px;
+  width: 100%;
+  display: flex;
+}
+.dk_nav_l{
+  height: 20px;
+  width: 66%;
+  float: left;
+}
+.dk_nav_r{
+  height: 20px;
+  width: 33%;
+  float: right;
+  font-size: 15px;
+  color: #777777;
+  text-align: right;
+}
+.dk_nav_r_img{
+  height: 20px;
+  width: 18px;
+  float: right;
+  padding-left: 5px;
+}
+/* ，每日听刊列表部分 */
+.dk_a{
+  height: 20px;
+  width: 100%;
+  display: flex;
+  font-size: 10px;
+}
+.dk_list_video{
+  height: 17px;
+  width: 17px;
+  float: left;
+}
+.dk_a_l{
+  height: 20px;
+  width: 66%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.dk_list_r{
+  width: 33%;
+  height: 20px;
+  float: right;
+  text-align: right;
+}
+/* 灰色占位 */
+/* 我的订阅部分-------------------------------------- */
+.dingy{
+  height: 300px;
+  width: 94%;
+  margin: auto;
+}
+.dy_nav{
+  height: 30px;
+  width: 100%;
+}
+.dy_lists{
+  width: 100%;
+  height: 4100px;
+  display: flex;
+}
+.dy_list{
+  width: 33%;
+  height: 230px;
+  float: left;
+}
+.dy_imgs{
+  height: 150px;
+  width: 30%;
+}
+.dy_img{
+  height: 150px;
+  width: 110px;
+}
+.dy_text{
+  text-align: center;
+}
+.dy_time{
+  font-size: 10px;
+  text-align: center;
+}
+
+/* 主目录的订阅部分------------- */
+.z_dy{
+  width: 100%;
+  height: 290px;
+  
+}
+.zdy_a{
+  width: 95%;
+  margin: auto;
+  height: 250px;
+  
+}
+.zdy_nav{
+  width: 100%;
+  height: 50px;
+}
+/* 左侧头像与昵称评分处 */
+.zdy_nav_l{
+  width: 80%;
+  height: 50px;
+  float: left;
+  display: flex;
+}
+.zdy_nav_r{
+  width: 20%;
+  height: 50px;
+  float: right;
+}
+.zdy_nav_l_img{
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.zdy_tx{
+  width: 50px;
+  height: 50px;
+}
+.zdy_nav_l_text{
+  width: 22%;
+  height: 50px;
+  text-align: left;
+}
+/* 头像 */
+.zdy_nc{
+  margin-top: 8px;
+}
+/* 头像下的时间 */
+.zdy_time{
+  font-size: 10px;
+  margin-top: 10px;
+}
+.zdy_pf{
+  height: 30px;
+  width: 90px;
+  
+  margin-top: 5px;
+  
+}
+.pingfen{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.zdy_jt_img{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-top: 20px;
+}
+/* 订阅导航内容部分 */
+.zdy_nr{
+  width: 100%;
+  height: 230px;
+}
+.zdy_nr_imgs{
+  margin-top: 10px;
+}
+.zdy_nr_img{
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+}
+.zdy_fxpl{
+  width: 100%;
+  height: 40px;
+}
+.zdy_fxpl_img{
+  width: 100%;
+  height: 40px;
+}

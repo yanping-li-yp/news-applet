@@ -1,0 +1,11 @@
+/* pages/news/news.wxss */
+.body{
+  width: 96%;
+  height: auto;
+  margin: 2%;
+  font-size: 14px;
+}
+.img{
+  width: 100%;
+  height: 150px;
+}

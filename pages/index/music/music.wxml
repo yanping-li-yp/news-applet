@@ -1,0 +1,53 @@
+<!--pages/index/music/music.wxml-->
+<view class="body">
+  <view class="sousuokuang">
+<image src="../../static/image/sousuo.png" class="sousuokuang_img"></image>
+<input type="text" class="sousuokuang_font"
+placeholder='为您推荐' placeholder-class="sousuokuang_font"></input>
+</view>
+<view class="demo">
+  <swiper indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls1}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="fenleilan">
+  <navigator  url="music/img1/img1">
+<image class="fenleilan_img" src="../../static/image/geshou.png"></image></navigator>
+<navigator  url="music/img2/img2">
+<image class="fenleilan_img" src="../../static/image/paihang.png"></image></navigator>
+<navigator  url="music/img3/img3">
+<image class="fenleilan_img" src="../../static/image/fenleigedan.png"></image></navigator>
+<navigator  url="music/img4/img4">
+<image class="fenleilan_img" src="../../static/image/diantai.png"></image></navigator>
+<navigator  url="music/img5/img5">
+<image class="fenleilan_img" src="../../static/image/zhibo.png"></image></navigator>
+
+</view>
+<view class="fenleilan_font">
+<navigator  url="music/img1/img1">
+<view class="fenleilan_font_font">歌手</view></navigator>
+<navigator  url="music/img2/img2">
+<view class="fenleilan_font_font">排行</view></navigator>
+<navigator  url="music/img3/img3">
+<view class="fenleilan_font_font">分类</view></navigator>
+<navigator  url="music/img4/img4">
+<view class="fenleilan_font_font">电台</view></navigator>
+<navigator  url="music/img5/img5">
+<view class="fenleilan_font_font">直播</view></navigator>
+</view>
+<view class="fenleilan_img_img">
+
+<image src="../../static/image/music1.jpg" class="fenleilan_img_img1"></image>
+
+<image src="../../static/image/music2.png" class="fenleilan_img_img1"></image>
+</view><view class="fenleilan_img_img">
+<image src="../../static/image/music3.jpg" class="fenleilan_img_img1"></image>
+
+<image src="../../static/image/music4.jpg" class="fenleilan_img_img1"></image>
+</view>
+</view>

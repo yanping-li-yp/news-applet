@@ -1,0 +1,71 @@
+/* pages/comments/comments.wxss */
+
+/* 用户信息 */
+page{
+  background-color: rgb(240, 240, 240);
+}
+.userinfo{
+  width: 96%;
+  height: 56px;
+  margin: 0px 2%;
+  margin-top: 8px;
+  display: flex;
+  background-color: white;
+}
+
+.userinfo_photo{
+  width: 54px;
+  height: 46px;
+  background-color: white;
+}
+
+.userinfo_photo_style{
+  width: 36px;
+  height: 36px;
+  margin: 10px 6px;
+}
+
+.userinfo_desc{
+  width: 66%;
+  height: 46px;
+  background-color: white;
+  /* clear: both; */
+}
+/* 叮当 果果 */
+.userinfo_name{
+  font-size: 13px;
+  display: inline-block;
+  font-weight: 600;
+  color: rgb(80,109,147);
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+.userinfo_details{
+  margin-top: 3px;
+  font-size: 10px;
+}
+
+.userinfo_time{
+  margin-top: 3px;
+  font-size: 8px;
+}
+
+/* 关注 */
+.guanzhu{
+  text-align: center;
+  line-height: 20px;
+  color: rgb(250, 83, 83);
+  font-size: 16px;
+  margin-left: auto; 
+  margin-top: 13px;
+}
+
+.guanzhu_num{
+  text-align: center;
+  line-height: 20px;
+  color: rgb(250, 83, 83);
+  font-size: 10px;
+  margin-left: auto; 
+  margin-top: 13px;
+}

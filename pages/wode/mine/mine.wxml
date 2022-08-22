@@ -1,0 +1,35 @@
+<!--pages/wode/mine/mine.wxml-->
+<view class="mine">
+  <view class="mine-font">
+  <view class="mine-font1" >账户与安全</view>
+</view>
+<view class="mine-font">
+  <view class="mine-font1" >青少年模式</view>
+</view>
+<view class="mine-font">
+  <view class="mine-font1">新消息提醒</view>
+</view>
+
+  <view class="mine-font">
+  <view class="mine-font1">勿扰模式</view>
+</view>
+<view class="mine-font">
+  <view class="mine-font1" >聊天</view>
+</view>
+<view class="mine-font">
+  <view class="mine-font1">隐私</view>
+</view>
+
+  <view class="mine-font">
+  <view class="mine-font1" >通用</view>
+</view>
+<view class="mine-font">
+  <view class="mine-font1" >帮助与反馈</view>
+</view>
+<view class="mine-font">
+  <view class="mine-font1">插件</view>
+</view>
+ <view class="mine-font">
+  <view class="mine-font1" bindtap="tuichu">退出</view>
+</view>
+</view>

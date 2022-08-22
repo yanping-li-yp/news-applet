@@ -1,0 +1,75 @@
+<!--pages/index/map/map.wxml-->
+<view class="body">
+<view class="place">
+<view class="place_zimu">A</view>
+<view class="place_font">安徽省</view>
+</view>
+<view class="place">
+<view class="place_zimu">B</view>
+<view class="place_font">北京</view>
+</view>
+<view class="place">
+<view class="place_zimu">C</view>
+<view class="place_font">重庆</view>
+</view>
+<view class="place">
+<view class="place_zimu">F</view>
+<view class="place_font">福建省</view>
+</view>
+<view class="place">
+<view class="place_zimu">G</view>
+<view class="place_font">甘肃省</view>
+</view>
+<view class="place">
+<view class="place_zimu"> </view>
+<view class="place_font">广东省</view>
+</view>
+<view class="place">
+<view class="place_zimu"> </view>
+<view class="place_font">贵州省</view>
+</view>
+<view class="place">
+<view class="place_zimu">H</view>
+<view class="place_font">海南省</view>
+</view>
+<view class="place">
+<view class="place_zimu"></view>
+<view class="place_font">河北省</view>
+</view>
+<view class="place">
+<view class="place_zimu"></view>
+<view class="place_font">河南省</view>
+</view>
+<view class="place">
+<view class="place_zimu"></view>
+<view class="place_font">黑龙江省</view>
+</view>
+<view class="place">
+<view class="place_zimu"></view>
+<view class="place_font">湖北省</view>
+</view>
+<view class="place">
+<view class="place_zimu"></view>
+<view class="place_font">湖南省</view>
+</view>
+<view class="place">
+<view class="place_zimu">J</view>
+<view class="place_font">吉林省</view>
+</view>
+<view class="place">
+<view class="place_zimu"></view>
+<view class="place_font">江苏省</view>
+</view>
+<view class="place">
+<view class="place_zimu"></view>
+<view class="place_font">江西省</view>
+</view>
+<view class="place">
+<view class="place_zimu">L</view>
+<view class="place_font">辽宁省</view>
+</view>
+<view class="place">
+<view class="place_zimu"></view>
+<view class="place_font">……</view>
+</view>
+</view>

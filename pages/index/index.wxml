@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="body">
+<view class="head">
+
+<image src="../../static/image/zuobiao.png" class="head_img"></image><navigator url="../index/map/map">
+<view class="head_font">北京</view></navigator>
+<view class="head_find">
+<image src="../../static/image/sousuo.png" class="head_img1"></image>
+
+<input type="text" class="head_font1"
+placeholder='大家都在搜新中国70周年…' ></input>
+</view>
+<image src="../../static/image/yun.png" class="head_yun"></image>
+<view class="head_font2">23℃</view></view>
+
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+<image src="../../static/image/jia.png" class="navbar_img"></image>
+</view>
+ 
+<!--热点-->
+<view hidden="{{currentTab!==0}}">
+  <include src="redian/redian"/>
+</view>
+ 
+<!--关注-->
+<view hidden="{{currentTab!==1}}">
+  <include src="guanzhu/guanzhu"/>
+</view>
+ 
+<!--时尚-->
+<view hidden="{{currentTab!==2}}">
+  <include src="shishang/shishang"/>
+</view>
+
+<!--美食-->
+<view hidden="{{currentTab!==3}}">
+  <include src="food/food"/>
+</view>
+ 
+<!--音乐-->
+<view hidden="{{currentTab!==4}}">
+  <include src="music/music"/>
+</view>
+
+<!--美图-->
+<view hidden="{{currentTab!==5}}">
+  <include src="photo/photo"/>
+</view>
+
+</view>

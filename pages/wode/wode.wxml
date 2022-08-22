@@ -1,0 +1,123 @@
+<!--pages/index/wode/wode.wxml-->
+<view class="top">
+  <view class="top_top">
+
+    <view class="user_photo">
+      <view class="top_top_middle">
+        <navigator url="mine/mine">
+        <image src="/static/image/touxiang.png" class="photo"></image>
+      </navigator>
+      <view class="user_name">李小松的果果</view>
+      <view class="user_content">优质原创作者</view>
+      </view>
+    </view>
+
+    <view class="weather">
+    <view class="weather_icon">
+      <image src="/static/image/yun.png" class="cloud"></image>
+      <view class="temperature">20°C</view>
+    </view>
+
+    <view class="qian">
+      <image src="/static/image/qiandao.png" class="qiandao"></image>
+      <view class="qian_dao">签到</view>
+    </view>
+    </view>
+  </view>  <!-- end of top_top -->
+  <view class="top_bottom">
+    <view class="top_item">
+      <image src="/static/image/1.png" class="top_item_icon"></image>
+      <view class="top_item_name">我的关注</view>
+    </view>
+
+    <view class="top_item">
+      <image src="/static/image/2.png" class="top_item_icon"></image>
+      <view class="top_item_name">资讯收藏</view>
+    </view>
+
+    <view class="top_item">
+      <image src="/static/image/3.png" class="top_item_icon"></image>
+      <view class="top_item_name">阅读记录</view>
+    </view>
+
+    <view class="top_item">
+      <image src="/static/image/4.png" class="top_item_icon"></image>
+      <view class="top_item_name">我赞过的</view>
+    </view>
+
+    <view class="top_item">
+      <image src="/static/image/5.png" class="top_item_icon"></image>
+      <view class="top_item_name">邀请好友</view>
+    </view>
+
+   </view>  <!--end of top_bottom -->
+
+<!-- </view> -->
+</view>
+
+
+<!-- 积分商城 -->
+<view class="jifenshangcheng">
+    <view class="jifenshangcheng_left">
+      <image src="/static/image/shop.png" class="shop"></image>
+      <view class="shop_title">积分商城</view>
+      <view class="shop_content">商品种类丰富总有你想要的</view>
+    </view>
+    <!-- <view class="jifenshangcheng_right"> -->
+      <view class="yaoqing">马上邀请</view>
+    <!-- </view> -->
+   </view>
+
+   <!-- 我的消息 -->
+   <view class="list">
+    <image src="/static/image/n_60.png" class="list_icon"></image>
+    <view class="list_text">我的消息</view>
+    <image src="/static/image/xiangqing.png" class="xiangqing"></image>
+   </view>
+
+      <!-- 我的订阅 -->
+    <view class="list_one">
+    <image src="/static/image/n_63.png" class="list_icon"></image>
+    <view class="list_text">我的订阅</view>
+    <image src="/static/image/xiangqing.png" class="xiangqing"></image>
+   </view>
+
+     <!-- 我的参与 -->
+     <view class="list_one">
+    <image src="/static/image/n_65.png" class="list_icon"></image>
+    <view class="list_text">我的参与</view>
+    <image src="/static/image/xiangqing.png" class="xiangqing"></image>
+   </view>
+
+     <!-- 绑定邀请码 -->
+     <view class="list_one">
+    <image src="/static/image/n_67.png" class="list_icon"></image>
+    <view class="list_text">绑定邀请码</view>
+    <image src="/static/image/xiangqing.png" class="xiangqing"></image>
+   </view>
+
+     <!-- 账号安全 -->
+     <view class="list_one">
+    <image src="/static/image/n_69.png" class="list_icon"></image>
+    <view class="list_text">账号安全</view>
+    <image src="/static/image/xiangqing.png" class="xiangqing"></image>
+   </view>
+
+      <!-- 我要投稿 -->
+    <view class="list">
+    <image src="/static/image/n_75.png" class="list_icon"></image>
+    <view class="list_text">我要投稿</view>
+    <image src="/static/image/xiangqing.png" class="xiangqing"></image>
+   </view>
+
+   <!-- 赢取积分 -->
+<view class="yingqujifen">
+    <view class="jifenshangcheng_left">
+      <image src="/static/image/n_78.png" class="shop"></image>
+      <view class="shop_title">赢取积分</view>
+      <view class="shop_content">赢积分兑换好礼等你来挑战</view>
+    </view>
+    <!-- <view class="jifenshangcheng_right"> -->
+      <view class="yaoqing choujifen">抽积分</view>
+    <!-- </view> -->
+   </view>

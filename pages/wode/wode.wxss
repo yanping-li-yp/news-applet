@@ -1,0 +1,222 @@
+/* pages/index/wode/wode.wxss */
+page{
+  background-color:#F2F2F2;
+}
+
+.top{
+  width: 98%;
+  height: auto;
+  padding: 0px 1% 0px 1%;
+  background-color: white;
+}
+
+.top_top{
+  width: 100%;
+  height: 60%;
+  background-color: white;
+}
+
+.user_photo{
+  width: 66.6%;
+  height: 100%;
+  display: inline-block;
+  background-color: white;
+}
+
+.top_top_middle{
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  float: right;
+}
+/* 用户头像 */
+.photo{
+  width: 56px;
+  height: 56px;
+  margin: 0px auto;
+  display:block;
+}
+
+.user_name{
+  /* display: block; */
+  padding-top: 8px;
+  font-size: 16px;
+  /* font-weight: ; */
+}
+
+.user_content{
+  /* display: block; */
+  padding-top: 4px;
+  font-size: 10px;
+}
+
+.weather{
+  width: 30%;
+  height: 100%;
+  float: right;
+  /* display: inline-block; */
+  /* padding-right: 7%; */
+  background-color: white;
+}
+
+.weather_icon{
+ display: flex;
+ float: right;
+ padding-right:8px ;
+}
+
+.cloud{
+  width: 24px;
+  height: 18px;
+  margin-right: 6px;
+}
+
+.temperature{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.qian{
+  margin: 42px -38px 0px 0px;
+  float: right;
+}
+
+.qiandao{
+  width: 20px;
+  height: 23px;
+}
+
+.qian_dao{
+  font-size: 10px;
+}
+
+.top_bottom{
+  width: 97%;
+  margin: 18px 1.5% 0 1.5%;
+  padding-bottom: 10px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.top_item{
+  /* float: left; */
+  text-align: center;
+  /* display: left; */
+}
+
+.top_item_icon{
+  width: 34px;
+  height: 34px;
+}
+
+.top_item_name{
+  font-size: 12px;
+}
+
+.jifenshangcheng{
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+.jifenshangcheng_left{
+  width: 60%;
+  height: 52px;
+  padding-top: 8px;
+  padding-left: 15px;
+  display: inline-block;
+  background-color: white;
+}
+
+.shop{
+  width: 58px;
+  height: 44px;
+  float: left;
+  padding-right: 15px;
+}
+
+.shop_content{
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.yaoqing{
+  width: 80px;
+  height: 28px;
+  float: right;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 20px;
+  margin: 17px 16px 0px 0px;
+  background-color:#168DE1;
+}
+
+.list{
+  margin: 10px 0px 10px 0px;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+}
+
+.list_icon{
+  width: 21px;
+  height: 20px;
+  float: left;
+  margin: 10px 8px 10px 18px;
+  /* display: inline-block; */
+}
+
+.list_text{
+  line-height: 40px;
+  display: inline-block;
+}
+
+.xiangqing{
+  width: 10px;
+  height: 16px;
+  margin: 12px 16px 10px 18px;
+  float: right;
+}
+
+.list_one{
+  margin-top: 1px;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+}
+
+.list_two{
+  margin: 10px 0px 0px 0px;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+}
+/* 赢取积分 */
+.yingqujifen{
+  margin-top: -9px;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+.shop{
+  width: 44px;
+  height: 44px;
+  float: left;
+  padding-right: 15px;
+}
+
+.shop_content{
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.choujifen{
+  background-color: #FF9B3D;
+}

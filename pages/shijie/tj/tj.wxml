@@ -1,0 +1,79 @@
+<!--pages/shijie/tj/tj.wxml-->
+
+<view class="table_scroll_2">
+<view class="icons_box_bind">
+
+<view class="icons_box">
+  <view class="icons icon1">
+    <image class="inside_logo" src="/xsx_image/recommend.png"></image>
+  </view>
+  <view class="icons_text">人气推荐</view>
+</view>
+
+<view class="icons_box">
+  <view class="icons icon2">
+    <image class="inside_logo" src="/xsx_image/youlike.png"></image>
+  </view>
+  <view class="icons_text">猜你喜欢</view>
+</view>
+
+<view class="icons_box">
+  <view class="icons icon3">
+    <image class="inside_logo" src="/xsx_image/game.png"></image>
+  </view><view class="icons_text">网络竞技</view>
+</view>
+
+<view class="icons_box">
+<view class="icons icon4">
+    <image class="inside_logo" src="/xsx_image/coffee.png"></image>
+  </view><view class="icons_text">娱乐天地</view>
+</view>
+
+</view>
+</view>
+
+<view class="playbar1">
+  <video style="height:424rpx;width:100%;" src="{{mapUrl}}"> </video>
+</view>
+
+<view class="share_bar1">
+<view class="play_num">播放 12309</view>
+<view class="more">
+  <image class="zzp_log" src="/xsx_image/more.png"></image>
+</view>
+<view class="zzp_num">150点赞</view>
+<view class="zzp">
+  <image class="zzp_log" src="/xsx_image/dianzan.png"></image>
+</view>
+<view class="zzp_num">120评论</view>
+<view class="zzp">
+  <image class="zzp_log" src="/xsx_image/pinglun.png"></image>
+</view>
+<view class="zzp_num">679分享</view>
+<view class="zzp">
+  <image class="zzp_log" src="/xsx_image/fenxiang.png"></image>
+</view>
+</view>
+
+<view class="playbar2">
+  <video style="height:425rpx;width:100%;" src="{{mapUrl}}"> </video>
+</view>
+
+<view class="share_bar2">
+<view class="play_num">播放 12309</view>
+<view class="more">
+  <image class="zzp_log" src="/xsx_image/more.png"></image>
+</view>
+<view class="zzp_num">150点赞</view>
+<view class="zzp">
+  <image class="zzp_log" src="/xsx_image/dianzan.png"></image>
+</view>
+<view class="zzp_num">120评论</view>
+<view class="zzp">
+  <image class="zzp_log" src="/xsx_image/pinglun.png"></image>
+</view>
+<view class="zzp_num">679分享</view>
+<view class="zzp">
+  <image class="zzp_log" src="/xsx_image/fenxiang.png"></image>
+</view>
+</view>
